@@ -20058,13 +20058,13 @@ const dtmfSpan = (0,_demo_utils_js__WEBPACK_IMPORTED_MODULE_0__.getSpan)("dtmf")
 const holdCheckbox = (0,_demo_utils_js__WEBPACK_IMPORTED_MODULE_0__.getInput)("hold");
 const muteCheckbox = (0,_demo_utils_js__WEBPACK_IMPORTED_MODULE_0__.getInput)("mute");
 // WebSocket Server URL
-const webSocketServer = "ws://asterisk.ccpml.com:8089/ws";
+const webSocketServer = "wss://asterisk.ccpml.com:8089/ws";
 serverSpan.innerHTML = webSocketServer;
 // Destination URI
-const target = "sip:User1@asterisk.ccpml.com";
+const target = "pjsip:User1@asterisk.ccpml.com";
 targetSpan.innerHTML = target;
 // Name for demo user
-const displayName = "SIP.js Demo";
+const displayName = "User 1";
 // SimpleUser delegate
 const simpleUserDelegate = {
     onCallCreated: () => {
