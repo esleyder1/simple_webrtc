@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cliente WebRTC SIP.js</title>
-  <script src="index.js"></script>
+  <title>WebRTC SIP Calling</title>
 </head>
 <body>
-  <h1>Cliente WebRTC SIP.js</h1>
+  <h1>WebRTC SIP Calling</h1>
 
-  <div id="callInterface" style="display: block;">
-    <button id="callButton">Llamar</button>
-    <button id="hangupButton" style="display: none;">Colgar</button>
+  <div id="login">
+    <h2>Iniciar sesión</h2>
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" placeholder="User1" required>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" placeholder="1234" required>
+    <button onclick="login()">Iniciar sesión</button>
   </div>
 
+  <div id="call">
+    <h2>Realizar llamada</h2>
+    <label for="destination">Destino:</label>
+    <input type="text" id="destination" placeholder="User2" required>
+    <button onclick="makeCall()">Realizar llamada</button>
+  </div>
 
+  <div id="status">
+    <h2>Estado</h2>
+    <p id="statusMessage">Desconectado</p>
+  </div>
+
+  
 </body>
 </html>
