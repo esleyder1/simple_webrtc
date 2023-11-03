@@ -20,7 +20,7 @@ const webSocketServer = "ws://asterisk.ccpml.com:8089/ws";
 serverSpan.innerHTML = webSocketServer;
 
 // Destination URI
-const target = "sip:User1@sasterisk.ccpml.com";
+const target = "sip:100@sasterisk.ccpml.com";
 targetSpan.innerHTML = target;
 
 // Name for demo user

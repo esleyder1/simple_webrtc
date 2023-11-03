@@ -20061,7 +20061,7 @@ const muteCheckbox = (0,_demo_utils_js__WEBPACK_IMPORTED_MODULE_0__.getInput)("m
 const webSocketServer = "wss://asterisk.ccpml.com:8089/ws";
 serverSpan.innerHTML = webSocketServer;
 // Destination URI
-const target = "sip:User1@asterisk.ccpml.com";
+const target = "sip:100@asterisk.ccpml.com";
 targetSpan.innerHTML = target;
 // Name for demo user
 const displayName = "SIP.js Demo";
